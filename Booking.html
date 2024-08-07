@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="littlelemon_logo.png" alt="Little Lemon Logo" height="50px" width="200px">
+            </div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Reservations">Reservations</a></li>
+                <li><a href="#Order Online">Order Online</a></li>
+                <li><a href="#Login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+<section class="body">
+<div class="booking-container">
+    <img src="littlelemon_logo.png" alt="Little Lemon Logo" class="logo">
+    <form id="booking-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="book-date">Date</label>
+                <input id="book-date" type="date" required/>
+            </div>
+            <div class="form-group">
+                <label for="book-time">Time</label>
+                <select id="book-time" required>
+                    <option value="">--</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                    <option value="8:00 PM">8:00 PM</option>
+                    <option value="9:00 PM">9:00 PM</option>
+                    <option value="10:00 PM">10:00 PM</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="book-guests">Number of guests</label>
+                <select id="book-guests" required>
+                    <option value="">--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="book-occasion">Occasion</label>
+                <select id="book-occasion" required>
+                    <option value="">--</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Anniversary">Anniversary</option>
+                    <option value="Engagement">Engagement</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+    <img src="small_logo.png" alt="Little Lemon Logo" class="logo-small">
+</div>
+
+<div id="confirmation-message" class="comfirm" style="display: none;">
+    <h1>Booking has been <span>confirmed!</span></h1>
+</div>
+</section>
+
+
+
+<footer>
+    <section>
+        <div class="company-info">
+            <img src="Asset 9@4x.png" alt="Logo">
+        </div>
+        <div>
+            <h3>Important Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Order Online</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <ul>
+                <li>Address: <br> 123 Town Street, Chicago</li>
+                <li>Phone: <br> +00 123 456 789</li>
+                <li>Email: <br> little@lemon.com</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Social Media Links</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </section>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
